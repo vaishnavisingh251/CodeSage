@@ -27,7 +27,7 @@ function App() {
     setIsLoading(true)
     setReview("")
     try {
-      const response = await axios.post('http://localhost:3000/ai/get-review', {
+      const response = await axios.post('https://codesage-hjeo.onrender.com', {
         code,
         language
       })
