@@ -27,7 +27,7 @@ function App() {
     setIsLoading(true)
     setReview("")
     try {
-      await axios.post('https://codesage-hjeo.onrender.com/ai/get-review', {
+      const response = await axios.post('https://codesage-hjeo.onrender.com/ai/get-review', {
         code,
         language
       })
